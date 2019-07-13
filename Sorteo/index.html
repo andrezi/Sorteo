@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Rifa!!</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="../Sorteo/css/css.css" rel="stylesheet">
+    <link rel='stylesheet prefetch' href='../Sorteo/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='../Sorteo/css/animate.min.css'>
+    <link rel="stylesheet prefetch" href="../Sorteo/css/font-awesome.css" />
+    <link rel="stylesheet" href="../Sorteo/css/style.css">
+</head>
+<body>
+<canvas id="c" style="display:none;z-index:-1;"></canvas>
+    <div class="container-fluid">
+        <div>
+            <div class="random_quotes text-center">
+                <br />
+                <br />
+            </div>
+            <div id="ganadores" class="col-md-12">
+            </div>
+			<div class="col-md-12">
+            <div class="quote-block">
+                <div class="content">
+                    <hr />
+                    <h1 id="bot" class="ban text-center">
+                        <span id="copa" style="float: left;"></span>
+						<span id="nUMil" style=" margin-left: 20%;float: left; width: 150px !important;">0</span>
+                        <span id="nCentenas" style="float: left; width: 150px !important;">0</span>
+                        <span id="nDecenas" style="float: left; width: 150px !important;">0</span>
+                        <span id="nUnidades" style="float: left; width: 150px !important;">0</span>
+                    </h1>
+                </div>
+                <div class="button row text-center">
+                    <div class="col-xs-12">
+                    <hr />
+                        <button id="getQuote" class="btn btn-lg ban" onclick="GenerarSiguienteGanador();">Siguiente Ganador</button>
+                    </div>
+                </div>
+            </div>
+			</div>
+		</div>
+    </div>
+    <script type="text/javascript" src='../Sorteo/js/jquery.min.js'></script>
+    <script type="text/javascript" src='../Sorteo/js/bootstrap.min.js'></script>
+    <script type="text/javascript" src="../Sorteo/js/index.js"></script>
+	<script type="text/javascript" src="../lib/sotoreMaster/dist/basil.min.js"></script>
+	<script type="text/javascript">
+	function loadScript(url, callback)
+	{
+		// Adding the script tag to the head as suggested before
+		var head = document.getElementsByTagName('head')[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+
+		// Then bind the event to the callback function.
+		// There are several events for cross browser compatibility.
+		script.onreadystatechange = callback;
+		script.onload = callback;
+
+		// Fire the loading
+		head.appendChild(script);
+	}
+	
+	loadScript("../lib/animarGano.js",function(){});
+	</script>
+</body>
+</html>
