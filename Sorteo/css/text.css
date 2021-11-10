@@ -120,3 +120,27 @@
 	font-size: 1.4rem;
 	font-weight: bold;
 }
+
+* {
+  font-family: 'open sans';
+}
+#contain {
+  height: 200px;  
+  overflow-y: scroll;  
+}
+#table_scroll {
+  width: 50%;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+#table_scroll tbody td {
+  padding: 10px;
+  background-color: #00bcd4;
+  color: #fff;
+}
+#table_fixed thead th {
+  padding: 10px;
+  background-color: #200be0;
+  color: #fff;
+  font-weight: 100;
+}
