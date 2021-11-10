@@ -1,0 +1,19 @@
+body{
+    background: #444;
+  }
+  .tabelaBody{
+    height: 182px;
+    overflow: hidden;
+    .slider{
+      position: relative;
+      table{
+        tr{
+          td{
+            border-top: 1px solid #444444;
+            color: #cccccc;
+            padding: 9px;
+          }
+        }
+      }
+    }
+  }

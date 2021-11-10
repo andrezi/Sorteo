@@ -205,13 +205,13 @@
 :root {
   /* button */
 --radius: 300px;
---wide: 120px;
---height: 50px;
---3d: 20px;
+--wide: 30px;
+--height: 30;
+--3d: 15px;
 
 /* colors */
 --color-w: #fff;
---color-1: #095fff;
+--color-1: #d2d0c6;
 --color-1dark: #0041b9;
 --color-2: #f7a41d;
 --color-3: #ebebeb;
@@ -241,6 +241,7 @@ border-radius: var(--radius);
 padding: var(--height) var(--wide);
 margin: 10px;
 top: 0px;
+
 
 -webkit-transition: all 0.2s;
 -moz-transition: all 0.2s;

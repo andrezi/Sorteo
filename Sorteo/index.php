@@ -86,11 +86,11 @@ include 'conexion.php';
                 </div>
                 <div id="borrar" class="col-md-5"></div>
                 <div id="ganadores" class="col-md-3">
-                    <img src="img/ganeyumbo.png">
                 </div>  
                 
             </div>
-            
+            <br><br>
+
 			<div class="col-md-12">
             <div class="quote-block">
                 <div class="content" style="background:black !important;">
@@ -114,7 +114,7 @@ include 'conexion.php';
                     <div class="col-xs-12">
                    <br><br>
                         <!--<input type="submit" name="submit" id="getQuote" class="btn btn-lg ban" onclick="GenerarSiguienteGanador();" value="GANADORES">-->
-                        <input type="submit" name="getQuote" onclick="hola(); realizaProceso($('#cedula').val(),$('#nombre').val(),$('#apellido').val()); GenerarSiguienteGanador($('#numero').val(),$('#producto').val());" class="button-3d font-1 uppercase" id="getQuote" value="Gane">
+                         <input type=image src=img/imagen5.png name="getQuote" onclick="hola(); realizaProceso($('#cedula').val(),$('#nombre').val(),$('#apellido').val()); GenerarSiguienteGanador($('#numero').val(),$('#producto').val());"  class="button-3d font-1 uppercase" id="getQuote" value="Gane">
                         
                         <button style="display: none" id="nuevoG" class="button-3dd font-1 uppercase" onclick="reload();">
                             Nuevo ganador
