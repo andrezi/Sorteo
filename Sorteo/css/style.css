@@ -16,15 +16,15 @@ canvas {
 body {
   margin: 0 auto;
   width: 80vw;
-  background: url(../img/pop7.jpg);
+  background: url(../img/navidad3.jpg);
   background-size: cover;
   color: white;
 }
 
 #bot span
 {
-  margin-left: -8px;
-  font-size: 250px;
+  margin-left: 15px;
+  font-size: 100px;
 }
 
 .button  {
@@ -36,19 +36,6 @@ body {
  
 }
 
-.button button:hover {
-  background-color: yellow;
-  color: darkblue;
-  -webkit-animation: pulse 1s;
-  animation: pulse 1s;
-}
-
-button {
-  background-color:yellow;
-  color: darkblue;
-  margin-top:0%;
-  margin-left: 1%
-}
 
 .content {
   margin-top: 5%;

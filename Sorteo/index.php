@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="../Sorteo/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link href="css/text.css" rel="stylesheet" />
+
 </head>
 <body>
 <?php
@@ -50,7 +52,7 @@ include 'conexion.php';
         <div>
             <div class="row">
                 <div id="ganador">
-                    <span id="resultado"></span>
+                    <span id="resultado" class="text3D"></span>
                 </div>  
                 <div class="col-md-4" id="premios">
                 <span style='font-family: Lobster; font-size: 40px;'>Seleccione Premio:</span>
@@ -92,14 +94,13 @@ include 'conexion.php';
 			<div class="col-md-12">
             <div class="quote-block">
                 <div class="content" style="background:black !important;">
-                    <hr />
                     <h1 id="bot" class="ban text-center">
                         <!--<span id="XXXX" style="float: left; margin-left: 7%; width: 250px !important;" class="copaGrande"></span>-->
 						<span id="nUMil" style="color:rgba(239,0,0);; border-top:8px solid #F9DE19; border-right:6px solid #F9DE19;border-left:6px solid #F9DE19; border-bottom:8px solid #F9DE19;  margin-left: 1%;float: left; width: 200px !important; no-repeat center center; ">0</span>
                         <span id="nCentenas" style="color:rgba(239,0,0); border-top:8px solid #F9DE19; border-right:6px solid #F9DE19; border-bottom:8px solid #F9DE19;border-left:6px solid #F9DE19; float: left; width: 200px !important; no-repeat center center;">0</span>
                         <span id="nDecenas" style="color:rgba(239,0,0); border-top:8px solid #F9DE19; border-right:6px solid #F9DE19; border-bottom:8px solid #F9DE19;border-left:6px solid #F9DE19;float: left; width: 200px !important;no-repeat center center;">0</span>
                         <span id="nUnidades" style="color:rgba(239,0,0); border-top:8px solid #F9DE19; border-right:6px solid #F9DE19; border-bottom:8px solid #F9DE19;border-left:6px solid #F9DE19;float: left; width: 200px !important; no-repeat center center;">0</span>
-                        <span id="nDMil" style="color:rgba(0,0,255,0.2); border-top:8px solid #F9DE19; border-right:6px solid #F9DE19; border-bottom:8px solid #F9DE19;border-left:6px solid #F9DE19;float: left; width: 200px !important; no-repeat center center;">0</span>
+                        <span id="nDMil" style="color:rgba(239,0,0); border-top:8px solid #F9DE19; border-right:6px solid #F9DE19; border-bottom:8px solid #F9DE19;border-left:6px solid #F9DE19;float: left; width: 200px !important; no-repeat center center;">0</span>
                     </h1>
                 </div>
 
@@ -111,11 +112,11 @@ include 'conexion.php';
  -->
                 <div class="button row text-center">
                     <div class="col-xs-12">
-                    <hr />
+                   <br><br>
                         <!--<input type="submit" name="submit" id="getQuote" class="btn btn-lg ban" onclick="GenerarSiguienteGanador();" value="GANADORES">-->
                         <input type="submit" name="getQuote" onclick="hola(); realizaProceso($('#cedula').val(),$('#nombre').val(),$('#apellido').val()); GenerarSiguienteGanador($('#numero').val(),$('#producto').val());" class="button-3d font-1 uppercase" id="getQuote" value="Gane">
                         
-                        <button style="display: none" id="nuevoG" class="button-3d font-1 uppercase" onclick="reload();">
+                        <button style="display: none" id="nuevoG" class="button-3dd font-1 uppercase" onclick="reload();">
                             Nuevo ganador
                         </button>
                         </script>

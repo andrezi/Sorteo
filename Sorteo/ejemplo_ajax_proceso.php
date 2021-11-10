@@ -3,7 +3,7 @@ include 'conexion.php';
 //$resultado = $_POST['cedula']; 
 //echo $resultado;
 
-        echo "<spam style='font-family: Britannic Bold; font-size: 50px;'>". $_POST['nombre'] ." ". $_POST['apellido'] ."</spam>";
+        echo "<spam>". $_POST['nombre'] ." ". $_POST['apellido'] ."</spam>";
       
             
 

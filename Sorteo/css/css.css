@@ -204,7 +204,7 @@
 
 :root {
   /* button */
---radius: 20px;
+--radius: 300px;
 --wide: 120px;
 --height: 50px;
 --3d: 20px;
@@ -229,7 +229,7 @@ margin-top: 100px;
 }
 
 .button-3d {
-font-size: 60px;
+font-size: 40px;
 position: relative;
 width: auto;
 display: inline-block;
@@ -258,3 +258,34 @@ box-shadow: 0px var(--3d) 0px var(--color-1dark);
   position: relative;
   top: var(--3d);
 }
+
+.button-3dd {
+  font-size: 30px;
+  position: relative;
+  width: auto;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  color: var(--color-w);
+  background: var(--color-1);
+  border-radius: var(--radius);
+  padding: var(--height) var(--wide);
+  margin: 10px;
+  top: 0px;
+  
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s ease;
+  
+  -webkit-box-shadow: 0px var(--3d) 0px var(--color-1dark);
+  -moz-box-shadow: 0px var(--3d) 0px var(--color-1dark);
+  box-shadow: 0px var(--3d) 0px var(--color-1dark);
+  }
+  
+  .button-3d:active{
+    -webkit-box-shadow: 0px 0px 0px var(--color-1dark);
+    -moz-box-shadow: 0px 0px 0px var(--color-1dark);
+    box-shadow: 0px 0px 0px var(--color-1dark);
+    position: relative;
+    top: var(--3d);
+  }
