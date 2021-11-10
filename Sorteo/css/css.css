@@ -7,12 +7,7 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 /* cyrillic-ext */
-@font-face {
-  font-family: 'Fira Sans Extra Condensed';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Fira Sans Extra Condensed Regular'), local('FiraSansExtraCondensed-Regular'), url(wg_5XrW_o1_ZfuCbAkBfGed8PZoqYNvuaEtxMzhnQk8SbZyiE6aTiPyL3F1wza7H.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+
 }
 /* cyrillic */
 @font-face {
@@ -205,4 +200,61 @@
   font-weight: 400;
   src: local('Passion One Regular'), local('PassionOne-Regular'), url(fY6k21F1QT2c_Oc3HRNDwo4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+:root {
+  /* button */
+--radius: 20px;
+--wide: 120px;
+--height: 50px;
+--3d: 20px;
+
+/* colors */
+--color-w: #fff;
+--color-1: #095fff;
+--color-1dark: #0041b9;
+--color-2: #f7a41d;
+--color-3: #ebebeb;
+}
+
+.margin0auto {margin: 0 auto;}
+.uppercase {text-transform: uppercase;}
+.font-1 {font-family: "Raleway", sans-serif;}
+.bold {font-weight: bold;}
+
+body {
+text-align: center;
+background-color: var(--color-3);
+margin-top: 100px;
+}
+
+.button-3d {
+font-size: 60px;
+position: relative;
+width: auto;
+display: inline-block;
+text-decoration: none;
+text-align: center;
+color: var(--color-w);
+background: var(--color-1);
+border-radius: var(--radius);
+padding: var(--height) var(--wide);
+margin: 10px;
+top: 0px;
+
+-webkit-transition: all 0.2s;
+-moz-transition: all 0.2s;
+transition: all 0.2s ease;
+
+-webkit-box-shadow: 0px var(--3d) 0px var(--color-1dark);
+-moz-box-shadow: 0px var(--3d) 0px var(--color-1dark);
+box-shadow: 0px var(--3d) 0px var(--color-1dark);
+}
+
+.button-3d:active{
+  -webkit-box-shadow: 0px 0px 0px var(--color-1dark);
+  -moz-box-shadow: 0px 0px 0px var(--color-1dark);
+  box-shadow: 0px 0px 0px var(--color-1dark);
+  position: relative;
+  top: var(--3d);
 }

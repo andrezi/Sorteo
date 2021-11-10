@@ -27,17 +27,22 @@ function generarAleatorio(desde, hasta) {
     // return Math.floor((Math.random() * hasta) + desde);
 }
 
-function GenerarSiguienteGanador() {
+function GenerarSiguienteGanador(num, premio) {
+	if(premio!=""){
+
+	//alert("hola");
+	
 	RestablecerAnimacionPirotecnia();
     $("#copa").html("");
-    $("#nUMil").css("margin-left", "20%");
+    $("#nUMil").css("margin-left", "1%");
 	$("#nUMil").text("0").css("color","#fff");
     $("#nUnidades").text("0").css("color","#fff");
     $("#nDecenas").text("0").css("color","#fff");
     $("#nCentenas").text("0").css("color","#fff");
+    $("#nDMil").text("0").css("color","#fff");
 
-    $("#getQuote").addClass("disabled");
-    $("#getQuote").attr("disabled", "disabled");
+    //$("#getQuote").addClass("disabled");
+    //$("#getQuote").attr("disabled", "disabled");
 
     var n;
 	
@@ -51,13 +56,13 @@ function GenerarSiguienteGanador() {
 	if(finRIng)
 		finRIng = parseInt(finRIng);
 	else
-		finRIng = 9999;
+		finRIng = 99999;
 	
 	var validarIng = 0;
     do {		
-        n = generarAleatorio(iniRIng, finRIng);
+        n = num;
         str = "" + n;
-        pad = "0000";
+        pad = "00000";
         result = pad.substring(0, pad.length - str.length) + str;
 		validarIng = validarIng + 1;
     }
@@ -68,6 +73,8 @@ function GenerarSiguienteGanador() {
 
     //AnimacionStar(0, 6, "#nCentenas");
     AnimacionAll();
+
+    }
 }
 
 function AnimacionAll()
@@ -75,40 +82,48 @@ function AnimacionAll()
 	var ptUM = setInterval(function(){
 		var ntemp = generarAleatorio(0, 9);
 		$("#nUMil").text(ntemp);
-    }, 102);
+    }, 10);
     var ptU = setInterval(function () {
         var ntemp = generarAleatorio(0, 9);
         $("#nUnidades").text(ntemp);
-    }, 100);
+    }, 10);
     var ptD = setInterval(function () {
         var ntemp = generarAleatorio(0, 9);
         $("#nDecenas").text(ntemp);
-    }, 102);
+    }, 10);
     var ptC = setInterval(function () {
         var ntemp = generarAleatorio(0, 9);
         $("#nCentenas").text(ntemp);
-    }, 98);
+    }, 10);
+    var ptDM = setInterval(function () {
+        var ntemp = generarAleatorio(0, 9);
+        $("#nDMil").text(ntemp);
+    }, 5);
     var stopAnimacion = setInterval(function () {
         switch(nivel)
         {
+            case 5:
+                clearInterval(ptDM);
+                $("#nDMil").text(ganadores[ganadores.length - 1].substring(nivel - 1, nivel)).css("color","blue");
+                break;
             case 4:
                 clearInterval(ptU);
-                $("#nUnidades").text(ganadores[ganadores.length - 1].substring(nivel - 1, nivel)).css("color","#161b16");
+                $("#nUnidades").text(ganadores[ganadores.length - 1].substring(nivel - 1, nivel)).css("color","blue");
                 break;
             case 3:
                 clearInterval(ptD);
-                $("#nDecenas").text(ganadores[ganadores.length - 1].substring(nivel - 1, nivel)).css("color","#161b16");
+                $("#nDecenas").text(ganadores[ganadores.length - 1].substring(nivel - 1, nivel)).css("color","blue");
                 break;
             case 2:
                 clearInterval(ptC);
-                $("#nCentenas").text(ganadores[ganadores.length - 1].substring(nivel - 1, nivel)).css("color","#161b16");
+                $("#nCentenas").text(ganadores[ganadores.length - 1].substring(nivel - 1, nivel)).css("color","blue");
                 break;
             case 1:
                 clearInterval(ptUM);
-                $("#nUMil").text(ganadores[ganadores.length - 1].substring(nivel - 1, nivel)).css("color","#161b16");
+                $("#nUMil").text(ganadores[ganadores.length - 1].substring(nivel - 1, nivel)).css("color","blue");
                 break;
         }
-        if (nivel !== 4) {
+        if (nivel !== 5) {
             nivel = nivel + 1;
         }
         else {
@@ -146,16 +161,16 @@ function CompletedAnimacion(nivel) {
     }
 }
 
-function SetWinner()
+/*function SetWinner()
 {
-    $("#copa").html('<span><i class="fa fa-trophy" style="color:gold;" aria-hidden="true"></i></span>&nbsp;&nbsp;');
+    $("#copa").html('<span><i class="fa" style="color:gold;" aria-hidden="true"></i></span>&nbsp;&nbsp;');
     $("#nUMil").css("margin-left","auto");
     $("#ganadores").append("<span style='font-size: 36px;'><i class='fa fa-trophy' style='color:gold;' aria-hidden='true'></i>&nbsp;<span>" + ganadores[ganadores.length - 1] + "</span></span>");
     $("#ganadores").append("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
     $("#getQuote").removeClass("disabled");
     $("#getQuote").removeAttr("disabled", "disabled");
 	AdministrarAnimacionPirotecnia();
-}
+}*/
 
 function AdministrarAnimacionPirotecnia()
 {	
