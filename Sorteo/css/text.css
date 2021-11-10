@@ -144,3 +144,13 @@
   color: #fff;
   font-weight: 100;
 }
+
+.divPadre {
+  height:100px;
+   text-align:center;
+}
+.divHijo {
+  height:50px;
+  width:400px;
+   margin:0px auto;
+}

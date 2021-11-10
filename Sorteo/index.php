@@ -54,13 +54,14 @@ include 'conexion.php';
                 <div id="ganador">
                     <span id="resultado" class="text3D"></span>
                 </div>  
-                <div class="col-md-4" id="premios">
+                <div class ="divPadre" id="premios">
+                    <div class="divHijo">
                 <span style='font-family: Lobster; font-size: 40px;'>Seleccione Premio:</span>
-                <select id="producto" name="producto" class="form-control form-control-lg" required>
-                <option value="">Seleccione:</option
+                <select id="producto" name="producto" class="form-control" required>
+                <option value="">Seleccione:</option> 
 >                <?php
                 // Realizamos la consulta para extraer los datos
-                $consulta1 = "SELECT * FROM premios where estado='activo'";
+                 $consulta1 = "SELECT * FROM premios where estado='activo'";
                 $resultado1 = mysqli_query( $conn, $consulta1 );
                     
                 while ($valores = mysqli_fetch_array($resultado1)) {
@@ -82,7 +83,7 @@ include 'conexion.php';
                 }
                 echo "</table>";
             ?>  
-
+                </div>
                 </div>
                 <div id="borrar" class="col-md-5"></div>
                 <div id="ganadores" class="col-md-3">
