@@ -1123,7 +1123,7 @@ $(document).ready(function() {
 	if ((objDiv.scrollTop + 100) == objDiv.scrollHeight) {
 	  objDiv.scrollTop = 0;
 	}
-	my_time = setTimeout('pageScroll()', 25);
+	my_time = setTimeout('pageScroll()', 50);
   }
   
   function getWidthHeader(id_header, id_scroll) {
@@ -1141,3 +1141,5 @@ $(document).ready(function() {
 	  $('#' + id_header + ' > thead th:nth-child(' + i + ')').css('width',th_width + 'px');
 	}
   }
+
+  

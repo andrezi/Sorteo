@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/text.css" rel="stylesheet" />
+    <link href="css/stylos.css" rel="stylesheet"/>
     <script type="text/javascript" src='./js/jquery.min.js'></script>
     <script type="text/javascript" src='./js/bootstrap.min.js'></script>
     <script type="text/javascript" src="./js/index.js"></script>
@@ -15,8 +16,19 @@
 
     <title>Document</title>
 </head>
+<style type="text/css">
+      html, body {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+      }
+</style>
 <body>
-<?php
+
+<img src="img/fonganadores.jpg" id="full-screen-background-image" /> 
+  <div id="wrapper">
+  <?php
     
     include 'conexion.php';
        
@@ -30,6 +42,13 @@
     ?>
 
 
+<center>
+    <div id="divPadre">
+        <div id="divHijo">
+            <h1 class="text3DG">¡GANADORES!</h1>
+        </div>
+    </div><br><br><br><br><br>
+    
 <table id="table_fixed">
     <thead>
       <tr>      
@@ -51,7 +70,9 @@
         ?>
         
     </tbody>
-</table>
+</table></center>
 </div>
+  </div>
+
 </body>
 </html>

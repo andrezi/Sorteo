@@ -97,11 +97,11 @@ include 'conexion.php';
                 <div class="content" style="background:black !important;">
                     <h1 id="bot" class="ban text-center">
                         <!--<span id="XXXX" style="float: left; margin-left: 7%; width: 250px !important;" class="copaGrande"></span>-->
-						<span id="nUMil" style="color:rgba(239,0,0);; border-top:8px solid #F9DE19; border-right:6px solid #F9DE19;border-left:6px solid #F9DE19; border-bottom:8px solid #F9DE19;  margin-left: 1%;float: left; width: 200px !important; no-repeat center center; ">0</span>
-                        <span id="nCentenas" style="color:rgba(239,0,0); border-top:8px solid #F9DE19; border-right:6px solid #F9DE19; border-bottom:8px solid #F9DE19;border-left:6px solid #F9DE19; float: left; width: 200px !important; no-repeat center center;">0</span>
-                        <span id="nDecenas" style="color:rgba(239,0,0); border-top:8px solid #F9DE19; border-right:6px solid #F9DE19; border-bottom:8px solid #F9DE19;border-left:6px solid #F9DE19;float: left; width: 200px !important;no-repeat center center;">0</span>
-                        <span id="nUnidades" style="color:rgba(239,0,0); border-top:8px solid #F9DE19; border-right:6px solid #F9DE19; border-bottom:8px solid #F9DE19;border-left:6px solid #F9DE19;float: left; width: 200px !important; no-repeat center center;">0</span>
-                        <span id="nDMil" style="color:rgba(239,0,0); border-top:8px solid #F9DE19; border-right:6px solid #F9DE19; border-bottom:8px solid #F9DE19;border-left:6px solid #F9DE19;float: left; width: 200px !important; no-repeat center center;">0</span>
+						<span id="nUMil" style= "color:rgba(239,0,0);font-family: Lobster; border-top:8px solid #F9DE19; border-right:6px solid #F9DE19;border-left:6px solid #F9DE19; border-bottom:8px solid #F9DE19;  margin-left: 1%;float: left; width: 200px !important; no-repeat center center; ">0</span>
+                        <span id="nCentenas" style="color:rgba(239,0,0);font-family: Lobster; border-top:8px solid #F9DE19; border-right:6px solid #F9DE19; border-bottom:8px solid #F9DE19;border-left:6px solid #F9DE19; float: left; width: 200px !important; no-repeat center center;">0</span>
+                        <span id="nDecenas" style="color:rgba(239,0,0);font-family: Lobster; border-top:8px solid #F9DE19; border-right:6px solid #F9DE19; border-bottom:8px solid #F9DE19;border-left:6px solid #F9DE19;float: left; width: 200px !important;no-repeat center center;">0</span>
+                        <span id="nUnidades" style="color:rgba(239,0,0);font-family: Lobster; border-top:8px solid #F9DE19; border-right:6px solid #F9DE19; border-bottom:8px solid #F9DE19;border-left:6px solid #F9DE19;float: left; width: 200px !important; no-repeat center center;">0</span>
+                        <span id="nDMil" style="color:rgba(239,0,0);font-family: Lobster; border-top:8px solid #F9DE19; border-right:6px solid #F9DE19; border-bottom:8px solid #F9DE19;border-left:6px solid #F9DE19;float: left; width: 200px !important; no-repeat center center;">0</span>
                     </h1>
                 </div>
 
@@ -116,11 +116,25 @@ include 'conexion.php';
                    <br><br>
                         <!--<input type="submit" name="submit" id="getQuote" class="btn btn-lg ban" onclick="GenerarSiguienteGanador();" value="GANADORES">-->
                          <input type=image src=img/imagen5.png name="getQuote" onclick="hola(); realizaProceso($('#cedula').val(),$('#nombre').val(),$('#apellido').val()); GenerarSiguienteGanador($('#numero').val(),$('#producto').val());"  class="button-3d font-1 uppercase" id="getQuote" value="Gane">
-                        
+
                         <button style="display: none" id="nuevoG" class="button-3dd font-1 uppercase" onclick="reload();">
                             Nuevo ganador
                         </button>
                         </script>
+
+                        <div class="container1">
+		<div id="carousel">
+			<figure><img src="http://lorempixel.com/186/116/nature/1" alt=""></figure>
+			<figure><img src="http://lorempixel.com/186/116/nature/2" alt=""></figure>
+			<figure><img src="http://lorempixel.com/186/116/nature/3" alt=""></figure>
+			<figure><img src="http://lorempixel.com/186/116/nature/4" alt=""></figure>
+			<figure><img src="http://lorempixel.com/186/116/nature/5" alt=""></figure>
+			<figure><img src="http://lorempixel.com/186/116/nature/6" alt=""></figure>
+			<figure><img src="http://lorempixel.com/186/116/nature/7" alt=""></figure>
+			<figure><img src="http://lorempixel.com/186/116/nature/8" alt=""></figure>
+			<figure><img src="http://lorempixel.com/186/116/people/9" alt=""></figure>
+		</div>
+	</div>
                     </div>
                 </div>
             </div>
