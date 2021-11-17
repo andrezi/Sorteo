@@ -105,23 +105,23 @@ function AnimacionAll()
         {
             case 5:
                 clearInterval(ptDM);
-                $("#nDMil").text(ganadores[ganadores.length - 1].substring(nivel - 1, nivel)).css("color","blue");
+                $("#nDMil").text(ganadores[ganadores.length - 1].substring(nivel - 1, nivel)).css("color","white");
                 break;
             case 4:
                 clearInterval(ptU);
-                $("#nUnidades").text(ganadores[ganadores.length - 1].substring(nivel - 1, nivel)).css("color","blue");
+                $("#nUnidades").text(ganadores[ganadores.length - 1].substring(nivel - 1, nivel)).css("color","white");
                 break;
             case 3:
                 clearInterval(ptD);
-                $("#nDecenas").text(ganadores[ganadores.length - 1].substring(nivel - 1, nivel)).css("color","blue");
+                $("#nDecenas").text(ganadores[ganadores.length - 1].substring(nivel - 1, nivel)).css("color","white");
                 break;
             case 2:
                 clearInterval(ptC);
-                $("#nCentenas").text(ganadores[ganadores.length - 1].substring(nivel - 1, nivel)).css("color","blue");
+                $("#nCentenas").text(ganadores[ganadores.length - 1].substring(nivel - 1, nivel)).css("color","white");
                 break;
             case 1:
                 clearInterval(ptUM);
-                $("#nUMil").text(ganadores[ganadores.length - 1].substring(nivel - 1, nivel)).css("color","blue");
+                $("#nUMil").text(ganadores[ganadores.length - 1].substring(nivel - 1, nivel)).css("color","white");
                 break;
         }
         if (nivel !== 5) {

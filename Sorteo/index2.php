@@ -55,7 +55,7 @@ include 'conexion.php';
                     <span id="resultado" class="text3D"></span>
                 </div>  
                 <div class ="divPadre" id="premios">
-                    <div class="divHijo"><br><br>
+                    <div class="divHijo">
                 <span style='font-family: Lobster; font-size: 40px;'>Seleccione Premio:</span>
                 <select id="producto" name="producto" class="form-control" required>
                 <option value="">Seleccione:</option> 
@@ -85,11 +85,11 @@ include 'conexion.php';
             ?>  
                 </div>
                 </div>
-     <!--            <div id="borrar" class="col-md-5"></div>
+                <div id="borrar" class="col-md-5"></div>
                 <div id="ganadores" class="col-md-3">
                 </div>  
                 
-            </div> -->
+            </div>
             <br><br>
 
 			<div class="col-md-12">
@@ -117,25 +117,24 @@ include 'conexion.php';
                         <!--<input type="submit" name="submit" id="getQuote" class="btn btn-lg ban" onclick="GenerarSiguienteGanador();" value="GANADORES">-->
                          <input type=image src=img/imagen5.png name="getQuote" onclick="hola(); realizaProceso($('#cedula').val(),$('#nombre').val(),$('#apellido').val()); GenerarSiguienteGanador($('#numero').val(),$('#producto').val());"  class="button-3d font-1 uppercase" id="getQuote" value="Gane">
 
-                        <button style="display: none"id="nuevoG" class="button-3dd font-1 uppercase" onclick="reload();">
-                            <span class="text3D2">Nuevo ganador</span>
-                        </button><br><br>
+                        <button style="display: none" id="nuevoG" class="button-3dd font-1 uppercase" onclick="reload();">
+                            Nuevo ganador
+                        </button>
+                        </script>
 
                         <div class="container1">
 		<div id="carousel">
-			<figure><img src="img/horno-halogeno.png" alt=""></figure>
-			<figure><img src="img/rock2.png" alt=""></figure>
-			<figure><img src="img/alcoba1.jpg" alt=""></figure>
-			<figure><img src="img/estufa-horno.png" alt=""></figure>
-			<figure><img src="img/nevera.png" alt=""></figure>
-			<figure><img src="img/smarttv.png" alt=""></figure>
-			<figure><img src="img/lavadora.png" alt=""></figure>
-			<figure><img src="img/sala-comedor.jpg" alt=""></figure>
-			<figure><img src="img/freidora.png" alt=""></figure>
+			<figure><img src="http://lorempixel.com/186/116/nature/1" alt=""></figure>
+			<figure><img src="http://lorempixel.com/186/116/nature/2" alt=""></figure>
+			<figure><img src="http://lorempixel.com/186/116/nature/3" alt=""></figure>
+			<figure><img src="http://lorempixel.com/186/116/nature/4" alt=""></figure>
+			<figure><img src="http://lorempixel.com/186/116/nature/5" alt=""></figure>
+			<figure><img src="http://lorempixel.com/186/116/nature/6" alt=""></figure>
+			<figure><img src="http://lorempixel.com/186/116/nature/7" alt=""></figure>
+			<figure><img src="http://lorempixel.com/186/116/nature/8" alt=""></figure>
+			<figure><img src="http://lorempixel.com/186/116/people/9" alt=""></figure>
 		</div>
 	</div>
-
- 
                     </div>
                 </div>
             </div>
@@ -144,15 +143,15 @@ include 'conexion.php';
     </div>
 
 
-
-
-
 <!--<input type="submit" class="btn btn-lg ban" name="submit" id="submit" value="GANADORES"><br>-->
 
 
 
     </form>
 
+
+    
+ 
 
 
 
@@ -170,7 +169,7 @@ include 'conexion.php';
             $("#premios").css("display","none");
             $("#borrar").css("display","none");
             $("#nuevoG").css("display","");
-            $("#ganador").attr("class");
+            $("#ganador").attr("class","col-md-9");
 
         }
     }
