@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="favicon.ico" />
     <link href="../Sorteo/css/css.css" rel="stylesheet">
     <link rel='stylesheet prefetch' href='../Sorteo/css/bootstrap.min.css'>
-  
+    <link href="css/zoom.css" rel="stylesheet" />
     <link rel="stylesheet prefetch" href="../Sorteo/css/font-awesome.css" />
     <link rel="stylesheet" href="../Sorteo/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -85,14 +85,14 @@ include 'conexion.php';
             ?>  
                 </div>
                 </div>
-     <!--            <div id="borrar" class="col-md-5"></div>
-                <div id="ganadores" class="col-md-3">
-                </div>  
                 
-            </div> -->
+               
+               <a class="button-3dii font-1 uppercase"  type=image src=img/flecha.png  href="ganadores.php">G</a>
+
+                
             <br><br>
 
-			<div class="col-md-12">
+			<div class="col-md-12" style="margin: top 100px;">
             <div class="quote-block">
                 <div class="content" style="background:black !important;">
                     <h1 id="bot" class="ban text-center">
@@ -134,7 +134,6 @@ include 'conexion.php';
 			<figure><img src="img/freidora.png" alt=""></figure>
 		</div>
 	</div>
-
  
                     </div>
                 </div>
@@ -230,5 +229,7 @@ include 'conexion.php';
 	
 	loadScript("../lib/animarGano.js",function(){});
 	</script>
+
+
 </body>
 </html>

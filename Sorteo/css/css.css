@@ -332,6 +332,38 @@ box-shadow: 0px var(--3d) 0px var(--color-1dark);
       top: var(--3d);
     }
 
+    .button-3dii {
+      font-size: 30px;
+      position: relative;
+      right: -49%;
+      width: 10%;
+      display: inline-block;
+      text-decoration: none;
+      text-align: center;
+      color: var(--color-w11);
+      background: var(--color-11);
+      border-radius: var(--radius1);
+      padding: var(--height1) var(--wide1);
+      margin: 10px;
+      top: 690px;
+      
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      transition: all 0.2s ease;
+      
+      -webkit-box-shadow: 0px var(--3d) 0px var(--color-1dark);
+      -moz-box-shadow: 0px var(--3d) 0px var(--color-1dark);
+      box-shadow: 0px var(--3d) 0px var(--color-1dark);
+      }
+      
+      .button-3dii:active{
+        -webkit-box-shadow: 0px 0px 0px var(--color-1dark);
+        -moz-box-shadow: 0px 0px 0px var(--color-1dark);
+        box-shadow: 0px 0px 0px var(--color-1dark);
+        position: relative;
+        top: 700px;
+      }
+  
 /*   div-footer{
     position : absolute;
     width : 100%;

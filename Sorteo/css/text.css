@@ -171,6 +171,7 @@
   overflow: hidden;
   padding: 10px;
   background-color: #200be0;
+  zoom: 75%;
   color: #fff;
   font-weight: 100;
 }
@@ -273,4 +274,10 @@
       }
     }
 
-    
+    #my{
+      zoom: 100%;
+      }
+
+      #ganador{
+        padding-top: 100px;
+      }

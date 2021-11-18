@@ -6,6 +6,7 @@
     <meta http-equiv="content-script-type" content="text/javascript" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/text.css" rel="stylesheet" />
+    <link href="css/zoom2.css" rel="stylesheet" />
     <link href="css/stylos.css" rel="stylesheet"/>
     <script type="text/javascript" src='./js/jquery.min.js'></script>
     <script type="text/javascript" src='./js/bootstrap.min.js'></script>
@@ -35,9 +36,11 @@
         width: 100%;
         padding: 0;
         margin: 0;
+        zoom:100%
       }
 </style>
 <body>
+  
 
 <div class="row">
 
@@ -52,14 +55,14 @@
   <?php
     
     include 'conexion.php';
-       
+    include 'conexion2.php';
         $consulta =     "SELECT a.nombres, a.apellidos , p.nombre_premio FROM ganadores g 
         inner join asesores a on g.id_cedula = a.cedula
         inner join premios p on g.id_premio = p.id";
     
         $resultado = mysqli_query( $conn, $consulta );
         $consultaBD =  $resultado;
-        
+
     ?>
 
 
@@ -85,7 +88,7 @@
     <tbody>
         <?php
         while ($valores = mysqli_fetch_array($consultaBD)){
-                echo "<tr>";
+                echo "<tr style='text-align:left; font-size:20px;'>";
                 echo "<td>".$valores['nombres']." ".$valores['apellidos']."</td>";
                 echo  "<td>".$valores['nombre_premio']."</td>" ;
                 echo "</tr>";

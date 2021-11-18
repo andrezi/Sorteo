@@ -6,19 +6,19 @@
 </head>
 <body>
 <?php
-$servername = "localhost";
-$database = "sorteogane2";
-$username = "root";
-$password = "";
+$servername2 = "localhost";
+$database2 = "sorteogane2";
+$username2 = "root";
+$password2 = "";
 // Create connection
-$conn = mysqli_connect($servername, $username, $password, $database);
+$conn2 = mysqli_connect($servername2, $username2, $password2, $database2);
 // Check connection    
-if (!$conn) {
+if (!$conn2) {
     die("Connection failed: " . mysqli_connect_error());
     
 }
 //echo "Connected successfully";
-$db = mysqli_select_db( $conn, $database );
+$db2 = mysqli_select_db( $conn2, $database2 );
 //mysqli_close($conn);
 ?>
 </body>
