@@ -1,43 +1,41 @@
+.copaGrande {
+    background-image: url(../img/copaGrande.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 
 canvas {
 	position: absolute;
-	top: 0;
-	left: 0;
-	background-color: #111;
+	top: 100;
+	left: 80;
+	background-color:black;
 	display: none;
 }
 
 body {
   margin: 0 auto;
   width: 80vw;
-  background-color: #1abc9c;
+  background: url(../img/navidad3.jpg);
+  background-size: cover;
   color: white;
 }
 
 #bot span
 {
-  margin-left: -8px;
-  font-size: 250px;
+  margin-left: 15px;
+  font-size: 100px;
 }
 
-.button {
+.button  {
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 100%;
+  font-size: 90%;
   font-weight: bold;
+  color: darkblue;
+  margin-right: -1%
+ 
 }
 
-.button button:hover {
-  background-color: #34495e;
-  color: white;
-  -webkit-animation: pulse 1s;
-  animation: pulse 1s;
-}
-
-button {
-  background-color:white;
-  color:#1abc9c;
-  margin-top:2%;
-}
 
 .content {
   margin-top: 5%;
@@ -50,7 +48,7 @@ button {
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 100%;
   font-weight: bolder;
-  background-color: #34495e;
+  background-color: #0000;
   padding: 5%;
   border-radius: 3px;
 }
@@ -61,3 +59,4 @@ button {
 .coder {
   font-family: 'Droid Sans', sans-serif;
 }
+X
