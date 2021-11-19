@@ -7,7 +7,7 @@
 <body>
 <?php
 $servername = "localhost";
-$database = "sorteogane";
+$database = "sorteogane2";
 $username = "root";
 $password = "";
 // Create connection

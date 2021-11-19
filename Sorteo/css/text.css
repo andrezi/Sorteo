@@ -27,7 +27,7 @@
 
   .text3DG {
     position: absolute;
-    top: -25%;
+    top: -30%;
     right: 50%; 
     transform: translate(50%,-50%);
     text-transform: uppercase;

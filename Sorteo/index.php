@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Rifa!!</title>
@@ -92,7 +92,7 @@ include 'conexion.php';
                 
             <br><br>
 
-			<div class="col-md-12" style="margin: top 100px;">
+			<div class="col-md-12" style="margin-top:-70px">
             <div class="quote-block">
                 <div class="content" style="background:black !important;">
                     <h1 id="bot" class="ban text-center">

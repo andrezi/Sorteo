@@ -55,8 +55,11 @@
   <?php
     
     include 'conexion.php';
-    include 'conexion2.php';
-        $consulta =     "SELECT a.nombres, a.apellidos , p.nombre_premio FROM ganadores g 
+        $consulta =     "SELECT a.nombres, a.apellidos , p.nombre_premio FROM sorteogane.ganadores g 
+        inner join asesores a on g.id_cedula = a.cedula
+        inner join premios p on g.id_premio = p.id
+        union all
+        SELECT a.nombres, a.apellidos , p.nombre_premio FROM sorteogane2.ganadores g 
         inner join asesores a on g.id_cedula = a.cedula
         inner join premios p on g.id_premio = p.id";
     
